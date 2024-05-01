@@ -16,42 +16,171 @@
 
   <!-- header -->
 
-  <header class="mt-5 position-relative z-10">
-    <div class="h-43 d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between position-relative">
+  <header class="mt-lg-5 position-relative z-10">
+     <!-- mobile menu -->
+     <div class="offcanvas offcanvas-end w-100 pt-4 d-lg-none" tabindex="-1" id="offcanvasExample"
+     aria-labelledby="offcanvasExampleLabel">
+     <div class="offcanvas-header position-absolute start-0 mt-2">
+       <svg class="cursor-pointer" data-bs-dismiss="offcanvas" aria-label="Close" width="24" height="24"
+         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path
+           d="M5 12L4.29289 11.2929L3.58579 12L4.29289 12.7071L5 12ZM17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11V13ZM8.29289 7.29289L4.29289 11.2929L5.70711 12.7071L9.70711 8.70711L8.29289 7.29289ZM4.29289 12.7071L8.29289 16.7071L9.70711 15.2929L5.70711 11.2929L4.29289 12.7071ZM5 13H17V11H5V13Z"
+           fill="#008BF9" />
+       </svg>
+     </div>
+     <div class="offcanvas-body">
+       <ul class="list-unstyled p-0 mb-3 fs-14 fw-bold">
+         <li class="py-3 cursor-pointer"><a class="d-block text-blue">صفحه اصلی</a></li>
+         <li class="cursor-pointer h-100">
+           <div class="d-flex align-items-center showHover dropdown-btn gap-4 py-3">
+             <p class="mb-0 text-blue" href="#">
+               انواع بیمه
+             </p>
+             <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                 d="M1.14688 0.646856C1.19332 0.600305 1.24849 0.563371 1.30922 0.538171C1.36996 0.512971 1.43508 0.5 1.50084 0.5C1.56659 0.5 1.63171 0.512971 1.69245 0.538171C1.75318 0.563371 1.80835 0.600305 1.85479 0.646856L7.50013 6.29242L13.1455 0.646856C13.192 0.60038 13.2471 0.563513 13.3079 0.53836C13.3686 0.513208 13.4337 0.500262 13.4994 0.500262C13.5652 0.500262 13.6303 0.513208 13.691 0.53836C13.7517 0.563513 13.8069 0.60038 13.8534 0.646856C13.8999 0.693332 13.9367 0.748507 13.9619 0.809231C13.9871 0.869955 14 0.935039 14 1.00077C14 1.06649 13.9871 1.13158 13.9619 1.1923C13.9367 1.25302 13.8999 1.3082 13.8534 1.35468L7.85409 7.35314C7.80765 7.3997 7.75248 7.43663 7.69174 7.46183C7.631 7.48703 7.56589 7.5 7.50013 7.5C7.43437 7.5 7.36926 7.48703 7.30852 7.46183C7.24778 7.43663 7.19261 7.3997 7.14617 7.35314L1.14688 1.35468C1.10032 1.30824 1.06338 1.25308 1.03818 1.19235C1.01297 1.13162 1 1.06652 1 1.00077C1 0.935015 1.01297 0.869911 1.03818 0.809181C1.06338 0.748451 1.10032 0.69329 1.14688 0.646856Z"
+                 fill="#0C356A" stroke="#0C356A"></path>
+             </svg>
+           </div>
+           <!-- dropdown -->
+           <ul class="fs-12 fw-bold list-unstyled pe-5 me-5 dropdown-content">
+             <li class="py-3">
+               <a class="d-flex text-blue align-items-center gap-2">
+                 <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9" />
+                   <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9" />
+                 </svg>
+                 <p class="mb-0">بیمه شخص ثالث</p>
+               </a>
+             </li>
+             <li class="py-3">
+               <a class="d-flex text-blue align-items-center gap-2">
+                 <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9" />
+                   <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9" />
+                 </svg>
+                 <p class="mb-0">بیمه بدنه</p>
+               </a>
+             </li>
+             <li class="py-3">
+               <a class="d-flex text-blue align-items-center gap-2">
+                 <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9" />
+                   <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9" />
+                 </svg>
+                 <p class="mb-0">بیمه مسئولیت و مهندسی</p>
+               </a>
+             </li>
+             <li class="py-3">
+               <a class="d-flex text-blue align-items-center gap-2">
+                 <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9" />
+                   <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9" />
+                 </svg>
+                 <p class="mb-0">بیمه تکمیلی و درمان</p>
+               </a>
+             </li>
+             <li class="py-3">
+               <a class="d-flex text-blue align-items-center gap-2">
+                 <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9" />
+                   <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9" />
+                 </svg>
+                 <p class="mb-0">بیمه آتش سوزی</p>
+               </a>
+             </li>
+           </ul>
+         </li>
+         <li class="py-3 cursor-pointer"><a class="d-block text-blue">مجلات بیمه</a></li>
+         <li class="py-3 cursor-pointer"><a class="d-block text-blue">درباره ما</a></li>
+         <li class="py-3 cursor-pointer"><a class="d-block text-blue">ارتباط با ما</a></li>
+       </ul>
+       <a class="d-block text-white bg-main rounded-17 py-3 text-center font-bold fs-12">یادآور قسط بیمه</a>
+     </div>
+   </div>
+    <!--  -->
+    <div class="h-43 px-4 px-lg-0 h-lg-auto d-flex align-items-center">
+      <div class="container rounded-b-22 px-4 px-lg-0 py-4 py-lg-0 bg-lg-whiteTransparent d-flex align-items-center justify-content-between position-relative">
         <svg data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
-          class="cursor-pointer d-lg-none" width="32" height="32" viewBox="0 0 24 25" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 7.5H5" stroke="#0C356A" stroke-width="2" stroke-linecap="round"></path>
-          <path d="M19 12.5H9" stroke="#008BF9" stroke-width="2" stroke-linecap="round"></path>
-          <path d="M19 17.5H13" stroke="#0C356A" stroke-width="2" stroke-linecap="round"></path>
-        </svg>
-        <a class="d-block d-lg-none">
-          <img alt="logo" src="assets/img/logo.png" class="img-fluid w-129">
+        class="cursor-pointer d-lg-none" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 7.5H5" stroke="url(#paint0_linear_174_121)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 12.5H9" stroke="url(#paint1_linear_174_121)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 17.5H13" stroke="url(#paint2_linear_174_121)" stroke-width="2" stroke-linecap="round"/>
+          <defs>
+          <linearGradient id="paint0_linear_174_121" x1="19" y1="8" x2="5" y2="8" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FB966C"/>
+          <stop offset="1" stop-color="#D5729A"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear_174_121" x1="19" y1="13" x2="9" y2="13" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FB966C"/>
+          <stop offset="1" stop-color="#D5729A"/>
+          </linearGradient>
+          <linearGradient id="paint2_linear_174_121" x1="19" y1="18" x2="13" y2="18" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FB966C"/>
+          <stop offset="1" stop-color="#D5729A"/>
+          </linearGradient>
+          </defs>
+          </svg>
+        <a class="d-block">
+          <img alt="logo" src="assets/img/logo.png" class="img-fluid w-129 w-sm-101">
         </a>
-        <div class="d-flex d-lg-none gap-3">
-          <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom"
-            class="cursor-pointer">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="24" height="24" fill="white"></rect>
-              <path
-                d="M21.0001 20.9997L17.5968 17.596M17.0036 4.99969C15.5217 3.75166 13.6084 2.99969 11.5194 2.99969C6.81432 2.99969 3.00012 6.81433 3.00012 11.5199C3.00012 16.2255 6.81432 20.0402 11.5194 20.0402C16.2244 20.0402 20.0386 16.2255 20.0386 11.5199C20.0386 10.3377 19.7978 9.21163 19.3627 8.18821"
-                stroke="#0C356A" stroke-width="1.5" stroke-linecap="round"></path>
-            </svg>
-          </div>
-          <a>
-            <svg width="26" height="26" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3.65387 1.82849C3.40343 1.50649 2.92745 1.47686 2.639 1.76531L1.60508 2.79923C1.1216 3.28271 0.94387 3.96766 1.1551 4.56847C2.00338 6.98124 3.39215 9.24671 5.32272 11.1773C7.25329 13.1078 9.51876 14.4966 11.9315 15.3449C12.5323 15.5561 13.2173 15.3784 13.7008 14.8949L14.7347 13.861C15.0231 13.5726 14.9935 13.0966 14.6715 12.8461L12.3653 11.0524C12.2008 10.9245 11.9866 10.8793 11.7845 10.9298L9.59541 11.4771C9.00082 11.6257 8.37183 11.4515 7.93845 11.0181L5.48187 8.56155C5.04849 8.12817 4.87427 7.49919 5.02292 6.90459L5.57019 4.71553C5.62073 4.51336 5.57552 4.29918 5.44758 4.13468L3.65387 1.82849ZM1.88477 1.01108C2.62689 0.268961 3.8515 0.345203 4.49583 1.17363L6.28954 3.47983C6.6187 3.90304 6.73502 4.45409 6.60498 4.97423L6.05772 7.16329C5.99994 7.3944 6.06766 7.63888 6.2361 7.80732L8.69268 10.2639C8.86113 10.4323 9.1056 10.5001 9.33671 10.4423L11.5258 9.89502C12.0459 9.76499 12.597 9.8813 13.0202 10.2105L15.3264 12.0042C16.1548 12.6485 16.231 13.8731 15.4889 14.6152L14.455 15.6492C13.7153 16.3889 12.6089 16.7137 11.5778 16.3512C9.01754 15.4511 6.61438 13.9774 4.56849 11.9315C2.5226 9.88562 1.04895 7.48246 0.148838 4.92225C-0.213682 3.89112 0.11113 2.78472 0.85085 2.045L1.88477 1.01108Z"
-                fill="#008BF9"></path>
-            </svg>
+        <div class="w-35 flex-shrink-0 d-lg-none">
+          <a class="w-100 d-block">
+            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_174_139)">
+              <rect x="10" y="9" width="35" height="35" rx="10" fill="url(#paint0_linear_174_139)" fill-opacity="0.5" shape-rendering="crispEdges"/>
+              <rect x="10.5" y="9.5" width="34" height="34" rx="9.5" stroke="url(#paint1_linear_174_139)" stroke-opacity="0.07" shape-rendering="crispEdges"/>
+              <rect x="31.5" y="26.5" width="4" height="7" rx="2" stroke="url(#paint2_linear_174_139)" stroke-width="2" stroke-linejoin="round"/>
+              <rect x="19.5" y="26.5" width="4" height="7" rx="2" stroke="url(#paint3_linear_174_139)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M19.5 27.5V30.5" stroke="url(#paint4_linear_174_139)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M35.5 27.5V30.5" stroke="url(#paint5_linear_174_139)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M35.5 27.5C35.5 25.1131 34.6571 22.8239 33.1569 21.136C31.6566 19.4482 29.6217 18.5 27.5 18.5C25.3783 18.5 23.3434 19.4482 21.8431 21.136C20.3429 22.8239 19.5 25.1131 19.5 27.5" stroke="url(#paint6_linear_174_139)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_174_139" x="0.6" y="0.6" width="53.8" height="53.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="1"/>
+              <feGaussianBlur stdDeviation="4.7"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.95 0 0 0 0 0.95 0 0 0 0.11 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_174_139"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_174_139" result="shape"/>
+              </filter>
+              <linearGradient id="paint0_linear_174_139" x1="10" y1="10.9444" x2="48.2407" y2="42.0556" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#33182C"/>
+              <stop offset="1" stop-color="#B9B2B2"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_174_139" x1="9.18394" y1="26.5" x2="45.9067" y2="26.5" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFAFCF"/>
+              <stop offset="1" stop-color="#2F002F" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_174_139" x1="31.5" y1="30" x2="35.5" y2="30" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FB966C"/>
+              <stop offset="1" stop-color="#D5729A"/>
+              </linearGradient>
+              <linearGradient id="paint3_linear_174_139" x1="19.5" y1="30" x2="23.5" y2="30" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FB966C"/>
+              <stop offset="1" stop-color="#D5729A"/>
+              </linearGradient>
+              <linearGradient id="paint4_linear_174_139" x1="19.5" y1="29" x2="20.5" y2="29" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FB966C"/>
+              <stop offset="1" stop-color="#D5729A"/>
+              </linearGradient>
+              <linearGradient id="paint5_linear_174_139" x1="35.5" y1="29" x2="36.5" y2="29" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FB966C"/>
+              <stop offset="1" stop-color="#D5729A"/>
+              </linearGradient>
+              <linearGradient id="paint6_linear_174_139" x1="19.5" y1="27.5" x2="35.5" y2="27.5" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FB966C"/>
+              <stop offset="1" stop-color="#D5729A"/>
+              </linearGradient>
+              </defs>
+              </svg>
           </a>
         </div>
-        <div class="w-200 flex-shrink-0">
-          <a class="w-100 d-block"><img alt="logo" src="assets/img/logo.png" class="img-fluid w-100 d-block"></a>
-        </div>
         <div class="d-none d-lg-flex align-items-center">
-          <ul class="list-unstyled mb-0 p-0 d-flex align-items-center gap-6">
+          <ul class="list-unstyled mb-0 p-0 d-flex align-items-center gap-6 gap-xl-3rem">
             <li class="h-100 d-flex align-items-center">
               <a class="text-white h-100 d-flex align-items-center">خانه</a>
             </li>
@@ -142,7 +271,7 @@
   <main>
 
     <!-- banner -->
-    <section class="position-relative -top-95">
+    <section class="position-relative -top-95 -top-lg-105">
       <div class="position-relative">
         <img alt="img" src="assets/img/_1_ 2.png" class="w-100 d-none d-sm-block">
         <img alt="img" src="assets/img/_1__2 1.png" class="w-100 d-sm-none">
@@ -582,7 +711,8 @@
               <div class="col-12">
                 <div class="position-relative p-4 px-0 px-sm-4">
                   <!-- bg -->
-                  <img alt="img" src="assets/img/Rectangle 2 (2).png" class="img-fluid w-100 h-100 position-absolute">
+                  <img alt="img" src="assets/img/Rectangle 2 (2).png" class="img-fluid w-100 h-100 position-absolute d-none d-md-block">
+                  <img alt="img" src="assets/img/Rectangle 2.png" class="img-fluid w-100 h-100 position-absolute d-md-none">
                   <!--  -->
                   <div class="d-flex align-items-end gap-4 mt-3 me-4">
                     <svg width="63" height="66" viewBox="0 0 63 66" fill="none" xmlns="http://www.w3.org/2000/svg">

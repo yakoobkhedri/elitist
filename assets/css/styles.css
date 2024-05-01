@@ -191,6 +191,10 @@ a {
 .rounded-15 {
     border-radius: 15px!important;
 }
+.rounded-b-22{
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
 .rounded-30 {
     border-radius: 30px!important;
 }
@@ -510,10 +514,21 @@ input[type="number"] {
     .fs-xl-14{
         font-size: 14px;
     }
+    .gap-xl-3rem{
+        gap: 3rem;
+    }
 }
 
 @media only screen and (max-width:992px) {
-   
+    .bg-lg-whiteTransparent{
+        background-color: #FFF7F724;
+    }
+    .h-lg-auto{
+        height: auto;
+    }
+    .-top-lg-105{
+        top: -105px;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -546,6 +561,9 @@ input[type="number"] {
        }
        .w-sm-49{
         width: 49px;
+       }
+       .w-sm-101{
+        width: 101px;
        }
        .-right-sm-24{
         right: -24px;
