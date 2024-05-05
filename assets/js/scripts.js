@@ -1,12 +1,3 @@
-// dropdown
-let dropdownBtn=Array.from(document.getElementsByClassName('dropdown-btn'));
-
-dropdownBtn.forEach((item)=>{
-  item.addEventListener('click',function () {
-    item.nextElementSibling.classList.toggle('active');
-  })
-})
-
 // swiper
 var project = new Swiper(".project", {
   slidesPerView: 1,
@@ -37,6 +28,22 @@ var blog = new Swiper(".blog", {
     },
   },
 });
+var blog2 = new Swiper(".blog2", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
 var testimonials = new Swiper(".testimonials", {
   slidesPerView: 1,
   spaceBetween: 100,
@@ -57,17 +64,6 @@ accordionBtn.forEach((item)=>{
 
 jalaliDatepicker.startWatch();
 
-// pay type
-
-let selectType=Array.from(document.getElementsByClassName('selectType'));
-let payType=Array.from(document.getElementsByClassName('payType'));
-
-selectType.forEach((item)=>{
-  item.addEventListener('change', function () {
-    payType.forEach((items)=>{items.classList.add('opacity-30')});
-    item.parentElement.parentElement.classList.remove('opacity-30');
-  })
-})
 
 // navigation
 
@@ -81,3 +77,16 @@ function activeLink() {
 
 list.forEach((item) =>
 item.addEventListener('mouseover',activeLink));
+
+// blog filter
+
+var portfolio = $('#portfolio-container').isotope({
+  originLeft: false
+});
+$('#portfolio-filter li').on('click', function () {
+  $("#portfolio-filter li").removeClass('active');
+  $(this).addClass('active');
+  portfolio.isotope({
+      filter: $(this).data('filter')
+  });
+});
