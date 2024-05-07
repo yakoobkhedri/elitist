@@ -773,6 +773,12 @@ header ul li:hover>svg,header ul li.active>svg {
 }
 
 @media only screen and (max-width:768px) {
+    .fs-md-8 {
+        font-size: 8px;
+    }
+    .fs-md-11 {
+        font-size: 11px;
+    }
     .fs-md-12 {
         font-size: 12px;
     }
@@ -801,6 +807,9 @@ header ul li:hover>svg,header ul li.active>svg {
     }
     .w-md-42 {
         width: 42px;
+    }
+    .w-md-60 {
+        width: 60px;
     }
     .w-md-100 {
         width: 100%;
