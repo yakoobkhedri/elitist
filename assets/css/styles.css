@@ -203,7 +203,9 @@ a {
 .rounded-15 {
     border-radius: 15px !important;
 }
-
+.rounded-20 {
+    border-radius: 20px !important;
+}
 .rounded-b-22 {
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
@@ -381,6 +383,9 @@ a {
 .bg-dark4 {
     background-color: #232323;
 }
+.bg-dark5{
+    background-color: #242424;
+}
 .bg-main-gradient {
     background: rgb(251, 150, 108);
     background: linear-gradient(90deg, rgba(251, 150, 108, 1) 0%, rgba(213, 114, 154, 1) 76%);
@@ -486,7 +491,9 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 .border-white-1 {
     border: 1px solid #ffffff47 !important;
 }
-
+.border-bottom-white-10{
+    border-bottom: 1px solid #ffffff29;
+}
 .border-purple {
     border: 1px solid #98618B;
 }
