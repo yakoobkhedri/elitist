@@ -185,6 +185,12 @@ a {
 }
 
 /* border-radius */
+.rounded-tl-0 {
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 .rounded-br-0 {
     border-bottom-right-radius: 0px !important;
     border-top-left-radius: 30px;
@@ -271,7 +277,10 @@ a {
 .-rotate-2 {
     transform: rotate(-2deg);
 }
-
+/* padding */
+.p-1px{
+    padding: 1px;
+}
 /* top */
 .-top-8 {
     top: -8px;
@@ -308,6 +317,9 @@ a {
 }
 .bottom-8 {
     bottom: -8px;
+}
+.-bottom-22 {
+    bottom: -22px;
 }
 .-bottom-250 {
     bottom: -250px;
@@ -445,7 +457,9 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 .fs-10 {
     font-size: 10px;
 }
-
+.fs-11 {
+    font-size: 11px;
+}
 .fs-12 {
     font-size: 12px;
 }
@@ -545,6 +559,12 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 .w-48 {
     width: 48px;
 }
+.w-53 {
+    width: 53px;
+}
+.w-69 {
+    width: 69px;
+}
 .w-76 {
     width: 76px;
 }
@@ -586,6 +606,9 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
     width: 433px;
 }
 /* height */
+.h-24 {
+    height: 24px;
+}
 .h-26 {
     height: 26px;
 }
@@ -608,6 +631,9 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 
 .h-60 {
     height: 60px;
+}
+.h-69 {
+    height: 69px;
 }
 .h-76 {
     height: 76px;
@@ -839,14 +865,23 @@ header ul li:hover>svg,header ul li.active>svg {
     .w-md-42 {
         width: 42px;
     }
+    .w-md-45 {
+        width: 45px;
+    }
     .w-md-60 {
         width: 60px;
     }
     .w-md-100 {
         width: 100%;
     }
+    .h-md-45 {
+        height: 45px;
+    }
     .h-md-42 {
         height: 42px;
+    }
+    .lh-md-20{
+        line-height: 20px!important;
     }
 }
 
@@ -854,7 +889,12 @@ header ul li:hover>svg,header ul li.active>svg {
     .fs-sm-14 {
         font-size: 14px;
     }
-
+    .fs-sm-20 {
+        font-size: 20px;
+    }
+    .fs-sm-24 {
+        font-size: 24px;
+    }
     .w-sm-49 {
         width: 49px;
     }
