@@ -13,6 +13,20 @@
 
 <body class="bg-dark2">
 
+  <!-- video modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <video controls="" class="w-100">
+          <source src="assets/img/64ad88885b273.mp4" type="video/mp4">
+      </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <!-- shape -->
   <img alt="shape" src="assets/img/Ellipse 4 (2).png" class="position-absolute -top-60 end-0 z-1">
   <!--  -->
@@ -876,7 +890,26 @@
           </a>
         </div>
         <div class="col-lg-5">
-          <img alt="img" class="img-fluid w-100">
+          <div class="position-relative">
+            <img alt="img" src="assets/img/Frame 9335.png" class="img-fluid w-100 rounded-25">
+            <!-- play icon -->
+            <div class="position-absolute top-0 start-0 bottom-0 end-0 m-auto w-100 d-flex align-items-center justify-content-center">
+              <svg class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#videoModal" width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.719 25.7315C37.4062 27.9238 38.75 29.0198 38.75 30.8945C38.75 32.7693 37.4062 33.8653 34.719 36.0575C33.9772 36.6628 33.2415 37.2325 32.5653 37.7073C31.972 38.1238 31.3003 38.5545 30.6048 38.9775C27.9238 40.6078 26.5833 41.423 25.381 40.5205C24.1788 39.618 24.0695 37.7285 23.8509 33.95C23.7891 32.8813 23.75 31.8338 23.75 30.8945C23.75 29.9553 23.7891 28.9078 23.8509 27.839C24.0695 24.0604 24.1788 22.1711 25.381 21.2685C26.5833 20.366 27.9238 21.1812 30.6048 22.8115C31.3003 23.2345 31.972 23.6653 32.5653 24.0818C33.2415 24.5566 33.9772 25.1264 34.719 25.7315Z" stroke="url(#paint0_linear_338_2149)" stroke-width="3.75"/>
+                <path d="M17.5 9.23908C21.1772 7.11196 25.4465 5.89453 30 5.89453C43.807 5.89453 55 17.0874 55 30.8945C55 44.7015 43.807 55.8945 30 55.8945C16.1929 55.8945 5 44.7015 5 30.8945C5 26.341 6.21743 22.0717 8.34455 18.3945" stroke="url(#paint1_linear_338_2149)" stroke-width="3.75" stroke-linecap="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_338_2149" x1="23.75" y1="30.8945" x2="38.75" y2="30.8945" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FB966C"/>
+                <stop offset="1" stop-color="#D5729A"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_338_2149" x1="5" y1="30.8945" x2="55" y2="30.8945" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FB966C"/>
+                <stop offset="1" stop-color="#D5729A"/>
+                </linearGradient>
+                </defs>
+                </svg>
+            </div>
+          </div>
         </div>
        </div>
       </div>
@@ -885,20 +918,20 @@
     <!-- step -->
     <section class="mt-5">
       <div class="container">
-        <h2 class="text-center text-main-gradient fs-40 font-bold">روند همکاری با ما</h2>
+        <h2 class="text-center text-main-gradient fs-40 fs-sm-24 font-bold">روند همکاری با ما</h2>
         <div class="mt-5 d-flex justify-content-center gap-5 max-w-920 mx-auto">
-         <div class="flex-grow-1 ms-4">
+         <div class="flex-grow-1 ms-md-4">
            <div>
             <div class="position-relative p-4">
               <img alt="bg" src="assets/img/Rectangle 4510.png" class="position-absolute top-0 end-0 start-0 bottom-0 w-100 h-100">
-              <h2 class="text-white font-bold text-center position-relative">مشــاوره</h2>
+              <h2 class="text-white font-bold text-center position-relative fs-md-16">مشــاوره</h2>
             </div>
            </div>
            <div class="mt-5 pt-1">
             <div class="mt-5 pt-5">
               <div class="position-relative p-4 mt-5">
                 <img alt="bg" src="assets/img/Rectangle 4510.png" class="position-absolute top-0 end-0 start-0 bottom-0 w-100 h-100">
-                <h2 class="text-white font-bold text-center position-relative">طراحی UIUX اختصاصی</h2>
+                <h2 class="text-white font-bold text-center position-relative fs-md-16">طراحی UIUX اختصاصی</h2>
               </div>
              </div>
            </div>
@@ -906,31 +939,31 @@
             <div class="mt-5 pt-5">
               <div class="position-relative p-4 mt-5">
                 <img alt="bg" src="assets/img/Rectangle 4510.png" class="position-absolute top-0 end-0 start-0 bottom-0 w-100 h-100">
-                <h2 class="text-white font-bold text-center position-relative">سئو و بهینه ســازی</h2>
+                <h2 class="text-white font-bold text-center position-relative fs-md-16">سئو و بهینه ســازی</h2>
               </div>
              </div>
            </div>
          </div>
          <div class="w-3 bg-white position-relative">
            <!-- 1 -->
-           <div class="rounded-circle fs-40 font-bold -right-32 start-0 mx-auto w-70 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">1</div>
-           <div class="rounded-circle fs-40 font-bold top-137 -right-32 start-0 mx-auto w-70 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">2</div>
-           <div class="rounded-circle fs-40 font-bold top-292 -right-32 start-0 mx-auto w-70 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">3</div>
-           <div class="rounded-circle fs-40 font-bold top-459 -right-32 start-0 mx-auto w-70 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">4</div>
-           <div class="rounded-circle fs-40 font-bold top-651 -right-32 start-0 mx-auto w-70 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">5</div>
+           <div class="rounded-circle fs-40 fs-md-32 font-bold -right-32 -right-sm-23 start-0 mx-auto w-sm-50 w-70 h-sm-50 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">1</div>
+           <div class="rounded-circle fs-40 fs-md-32 font-bold top-137 -right-32 -right-sm-23 start-0 mx-auto w-sm-50 w-70 h-sm-50 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">2</div>
+           <div class="rounded-circle fs-40 fs-md-32 font-bold top-292 -right-32 -right-sm-23 start-0 mx-auto w-sm-50 w-70 h-sm-50 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">3</div>
+           <div class="rounded-circle fs-40 fs-md-32 font-bold top-459 -right-32 -right-sm-23 start-0 mx-auto w-sm-50 w-70 h-sm-50 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">4</div>
+           <div class="rounded-circle fs-40 fs-md-32 font-bold top-651 -right-32 -right-sm-23 start-0 mx-auto w-sm-50 w-70 h-sm-50 h-70 d-flex align-items-center justify-content-center position-absolute text-white bg-main-gradient main-hover">5</div>
          </div>
-         <div class="flex-grow-1 me-4">
+         <div class="flex-grow-1 me-md-4">
           <div class="mt-5 pt-5">
             <div class="position-relative p-4">
               <img alt="bg" src="assets/img/Rectangle 4507.png" class="position-absolute top-0 end-0 start-0 bottom-0 w-100 h-100">
-              <h2 class="text-white font-bold text-center position-relative">بررسـی هدف <br>و اسـتراتژی</h2>
+              <h2 class="text-white font-bold text-center position-relative fs-md-16">بررسـی هدف <br>و اسـتراتژی</h2>
             </div>
           </div>
           <div class="mt-5 pt-2">
             <div class="mt-5 pt-5">
               <div class="position-relative p-4 mt-5">
                 <img alt="bg" src="assets/img/Rectangle 4507.png" class="position-absolute top-0 end-0 start-0 bottom-0 w-100 h-100">
-                <h2 class="text-white font-bold text-center position-relative">تست نهایی و اجرای<br> وبسایت</h2>
+                <h2 class="text-white font-bold text-center position-relative fs-md-16">تست نهایی و اجرای<br> وبسایت</h2>
               </div>
             </div>
           </div>
@@ -943,13 +976,36 @@
     <!-- ui ux steps -->
     <section class="mt-5">
       <div class="container">
+        <div class="mx-auto flex-column rounded-25 d-flex d-md-none align-items-center gap-3 fs-14 border-white-1 bg-main-gradient-4 p-4 mb-5">
+          <p class="mb-0 fs-14 text-main-gradient font-bold text-center">برای رشد کسب وکارتان، نیاز به طراحی سایت دارید!!</p>
+          <a class="bg-main-gradient main-hover w-151 h-40 rounded-pill d-flex align-items-center justify-content-center gap-1 text-white">
+            <p class="mb-0 fs-14 font-bold">مشاهده بیشتر</p>
+            <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_237_172)">
+                <path d="M4.99855 10.7929C4.60802 11.1834 4.60802 11.8166 4.99855 12.2071L11.3625 18.5711C11.753 18.9616 12.3862 18.9616 12.7767 18.5711C13.1672 18.1805 13.1672 17.5474 12.7767 17.1569L7.11987 11.5L12.7767 5.84315C13.1672 5.45262 13.1672 4.81946 12.7767 4.42893C12.3862 4.03841 11.753 4.03841 11.3625 4.42893L4.99855 10.7929ZM22.2949 10.5L5.70566 10.5V12.5L22.2949 12.5V10.5Z" fill="white"></path>
+              </g>
+              <defs>
+                <filter id="filter0_d_237_172" x="0.705566" y="0.13623" width="25.5894" height="22.7275" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                  <feOffset></feOffset>
+                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                  <feComposite in2="hardAlpha" operator="out"></feComposite>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_237_172"></feBlend>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_237_172" result="shape"></feBlend>
+                </filter>
+              </defs>
+            </svg>
+          </a>
+        </div>
        <div class="row mx-0 g-4 align-items-center">
         <div class="col-lg-5">
           <img alt="img" src="assets/img/Ui text with laptop and web design elements lettering.png" class="img-fluid d-block mx-auto">
         </div>
         <div class="col-lg-7">
-          <h2 class="fs-40 fs-md-24 font-bold text-main-gradient">مراحل طراحی UIUX</h2>
-          <p class="mt-4 fs-14 text-white lh-lg">
+          <h2 class="fs-40 fs-md-24 font-bold text-main-gradient text-center text-md-end">مراحل طراحی UIUX</h2>
+          <p class="mt-4 fs-14 text-white lh-lg text-justify">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
           </p>
         </div>
@@ -958,7 +1014,7 @@
     </section>
 
     <!-- add -->
-    <section class="mt-5">
+    <section class="mt-5 d-none d-md-block">
       <div class="container">
        <div class="rounded-25 d-flex align-items-center justify-content-around px-5 py-4 bg-purple-gradient">
         <div>
@@ -995,13 +1051,13 @@
     <section class="my-5">
       <div class="container">
         <div class="row mx-0 g-4 align-items-center">
-          <div class="col-lg-8 order-last order-lg-first">
+          <div class="col-lg-8">
             <h1 class="fs-40 fs-md-24 text-center text-lg-end font-bold text-main-gradient">سئو و بهینه سازی</h1>
             <p class="mt-4 fs-14 text-white lh-lg">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
             </p>
           </div>
-          <div class="col-lg-4 order-first order-lg-last">
+          <div class="col-lg-4">
             <img alt="img" src="assets/img/Lettering SEO with target and magnifyer text.png" class="d-block img-fluid mx-auto">
           </div>
         </div>

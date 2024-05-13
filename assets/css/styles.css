@@ -891,7 +891,9 @@ header ul li:hover>svg,header ul li.active>svg {
     .fs-md-24 {
         font-size: 24px;
     }
-
+    .fs-md-32 {
+        font-size: 32px;
+    }
     .fs-md-36 {
         font-size: 36px;
     }
@@ -931,12 +933,20 @@ header ul li:hover>svg,header ul li.active>svg {
     .w-sm-49 {
         width: 49px;
     }
-
+    .w-sm-50 {
+        width: 50px;
+    }
     .w-sm-101 {
         width: 101px;
     }
+    .h-sm-50{
+        height: 50px;
+    }
     .h-sm-128{
         height: 128px;
+    }
+    .-right-sm-23{
+        right: -23px;
     }
     .-right-sm-24 {
         right: -24px;
