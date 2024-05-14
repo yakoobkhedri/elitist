@@ -49,12 +49,26 @@ var testimonials = new Swiper(".testimonials", {
   spaceBetween: 100,
   autoplay: true,
 });
+var portfolio = new Swiper(".portfolio", {
+  effect: "coverflow",
+  loop:true,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 2,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+});
 // accordion
 
-let accordionBtn=Array.from(document.getElementsByClassName('accordion-btn'));
+let accordionBtn = Array.from(document.getElementsByClassName('accordion-btn'));
 
-accordionBtn.forEach((item)=>{
-  item.addEventListener('click',function () {
+accordionBtn.forEach((item) => {
+  item.addEventListener('click', function () {
     item.classList.toggle('active');
     item.nextElementSibling.classList.toggle('active');
   })
@@ -70,13 +84,13 @@ jalaliDatepicker.startWatch();
 const list = document.querySelectorAll('.list');
 
 function activeLink() {
-    list.forEach((item) =>
+  list.forEach((item) =>
     item.classList.remove('active'));
-    this.classList.add('active');
+  this.classList.add('active');
 }
 
 list.forEach((item) =>
-item.addEventListener('mouseover',activeLink));
+  item.addEventListener('mouseover', activeLink));
 
 // blog filter
 
@@ -87,6 +101,6 @@ $('#portfolio-filter li').on('click', function () {
   $("#portfolio-filter li").removeClass('active');
   $(this).addClass('active');
   portfolio.isotope({
-      filter: $(this).data('filter')
+    filter: $(this).data('filter')
   });
 });

@@ -539,6 +539,10 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
     max-width: 654px;
     width: 100%;
 }
+.max-w-880 {
+    max-width: 880px;
+    width: 100%;
+}
 .max-w-920 {
     max-width: 920px;
     width: 100%;
@@ -849,6 +853,9 @@ header ul li:hover>svg,header ul li.active>svg {
 }
 
 @media only screen and (max-width:992px) {
+    header > div:last-child > div{
+        box-shadow: 0 0 21px 8px #F955D024;
+    }
     .bg-lg-whiteTransparent {
         background-color: #FFF7F724;
     }
@@ -859,6 +866,9 @@ header ul li:hover>svg,header ul li.active>svg {
 
     .-top-lg-287 {
         top: -287px;
+    }
+    .fs-lg-32{
+      font-size: 32px;
     }
 }
 
@@ -906,6 +916,9 @@ header ul li:hover>svg,header ul li.active>svg {
     .w-md-60 {
         width: 60px;
     }
+    .w-md-85 {
+        width: 85px;
+    }
     .w-md-100 {
         width: 100%;
     }
@@ -921,6 +934,12 @@ header ul li:hover>svg,header ul li.active>svg {
 }
 
 @media only screen and (max-width:576px) {
+    .fs-sm-11 {
+        font-size: 11px;
+    }
+    .fs-sm-12 {
+        font-size: 12px;
+    }
     .fs-sm-14 {
         font-size: 14px;
     }
@@ -938,6 +957,9 @@ header ul li:hover>svg,header ul li.active>svg {
     }
     .w-sm-101 {
         width: 101px;
+    }
+    .w-sm-119 {
+        width: 119px;
     }
     .h-sm-50{
         height: 50px;
