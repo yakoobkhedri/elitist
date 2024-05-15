@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    z-index: 9;
+    z-index: 10;
     backdrop-filter: blur(4px);
 }
 
@@ -229,6 +229,9 @@ a {
 }
 
 /* z index */
+.-z-1 {
+    z-index: -1;
+}
 .z-0 {
     z-index: 0;
 }
@@ -523,6 +526,10 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 /* max width */
 .max-w-357 {
     max-width: 357px;
+    width: 100%;
+}
+.max-w-380 {
+    max-width: 380px;
     width: 100%;
 }
 .max-w-521 {
