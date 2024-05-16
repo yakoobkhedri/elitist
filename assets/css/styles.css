@@ -154,6 +154,9 @@ body {
     user-select: none;
     overflow-x: hidden;
 }
+section{
+    overflow-y: hidden;
+}
 .font-bold {
     font-family: "yekanBakh-Bold";
 }
@@ -526,6 +529,10 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 /* max width */
 .max-w-357 {
     max-width: 357px;
+    width: 100%;
+}
+.max-w-300 {
+    max-width: 300px;
     width: 100%;
 }
 .max-w-380 {
