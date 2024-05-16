@@ -78,7 +78,8 @@ accordionBtn.forEach((item) => {
 
 jalaliDatepicker.startWatch();
 
-
+  // aos
+  AOS.init();
 // navigation
 
 const list = document.querySelectorAll('.list');
@@ -91,16 +92,3 @@ function activeLink() {
 
 list.forEach((item) =>
   item.addEventListener('mouseover', activeLink));
-
-// blog filter
-
-var portfolio = $('#portfolio-container').isotope({
-  originLeft: false
-});
-$('#portfolio-filter li').on('click', function () {
-  $("#portfolio-filter li").removeClass('active');
-  $(this).addClass('active');
-  portfolio.isotope({
-    filter: $(this).data('filter')
-  });
-});
