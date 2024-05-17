@@ -986,7 +986,9 @@ header ul li:hover>svg,header ul li.active>svg {
     .-right-sm-24 {
         right: -24px;
     }
-
+    .bottom-sm-80{
+        bottom: 80px!important;
+    }
     .-top-sm-24 {
         top: -24px;
     }
