@@ -80,6 +80,7 @@ jalaliDatepicker.startWatch();
 
   // aos
   AOS.init();
+  
 // navigation
 
 const list = document.querySelectorAll('.list');
