@@ -293,6 +293,9 @@ a {
 .-top-8 {
     top: -8px;
 }
+.-top-16 {
+    top: -16px;
+}
 .top-29 {
     top: 29%;
 }
@@ -359,6 +362,9 @@ a {
 .right-12 {
     right: 12px;
 }
+.right-13 {
+    right: 13px;
+}
 .right-14 {
     right: 14px;
 }
@@ -397,7 +403,13 @@ a {
 .lh-24 {
     line-height: 24px;
 }
-
+/* rotate */
+.-rotate-14{
+    transform: rotate(-14deg);
+}
+.rotate-14{
+    transform: rotate(14deg);
+}
 /* line clump */
 .line-clump-1 {
     display: -webkit-box;
@@ -456,6 +468,9 @@ a {
 .bg-dark7{
     background-color: #181818;
 }
+.bg-dark8{
+    background-color: #212121;
+}
 .bg-main-gradient {
     background: rgb(251, 150, 108);
     background: linear-gradient(90deg, rgba(251, 150, 108, 1) 0%, rgba(213, 114, 154, 1) 76%);
@@ -495,6 +510,9 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 
 .bg-gray2 {
     background-color: #D9D9D9;
+}
+.bg-gray3{
+    background-color: #E2E2E2;
 }
 .bg-banner{
     background: linear-gradient(131deg, rgba(187,85,255,1) 0%, rgba(112,51,153,1) 100%);
@@ -597,7 +615,9 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 .border-purple {
     border: 1px solid #98618B;
 }
-
+.border-purple2{
+    border: 1px solid #FF8BE252;
+}
 .border-gradient-1 {
     border-width: 1px;
     border-style: solid;
@@ -613,10 +633,15 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 .w-3 {
     width: 3px;
 }
+.w-18 {
+    width: 18px;
+}
 .w-22 {
     width: 22px;
 }
-
+.w-26 {
+    width: 26px;
+}
 .w-40 {
     width: 40px;
 }
@@ -643,7 +668,9 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 .w-101 {
     width: 101px;
 }
-
+.w-122 {
+    width: 122px;
+}
 .w-129 {
     width: 129px;
 }
@@ -671,6 +698,9 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 .w-242 {
     width: 242px;
 }
+.w-260 {
+    width: 260px;
+}
 .w-262 {
     width: 262px;
 }
@@ -681,13 +711,18 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
     width: 433px;
 }
 /* height */
+.h-18{
+    height: 18px;
+}
 .h-24 {
     height: 24px;
 }
 .h-26 {
     height: 26px;
 }
-
+.h-30 {
+    height: 30px;
+}
 .h-40 {
     height: 40px;
 }
@@ -744,6 +779,10 @@ background: linear-gradient(131deg, rgba(255, 255, 255, 0.09) 0%, rgba(249, 142,
 }
 .-mt-175 {
     margin-top: -175px;
+}
+.-mx-162{
+    margin-right: -162px;
+    margin-left: -162px;
 }
 .mt-128 {
     margin-top: 128px;
