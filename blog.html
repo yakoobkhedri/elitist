@@ -14,6 +14,25 @@
 
 <body class="bg-dark2 position-relative">
 
+    <!-- search modal -->
+    <div class="modal fade show" id="search" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered max-w-997">
+        <div class="modal-content rounded-20 border-main-2">
+          <div class="modal-body p-0">
+            <form>
+              <div class="d-flex rounded-20 border shadow-sm align-items-center px-4 h-70 justify-content-between gap-2">
+                <input placeholder="جستجو کنید..." type="search" class="flex-grow-1 bg-transparent border-0 outline-none py-2 fs-14 font-bold">
+                <svg class="cursor-pointer" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" transform="translate(0.5)" fill="white"></rect>
+                  <path d="M21.5 20.9998L18.0967 17.5961M17.5035 4.99976C16.0216 3.75172 14.1082 2.99976 12.0192 2.99976C7.3142 2.99976 3.5 6.81439 3.5 11.52C3.5 16.2256 7.3142 20.0402 12.0192 20.0402C16.7243 20.0402 20.5385 16.2256 20.5385 11.52C20.5385 10.3377 20.2977 9.21169 19.8625 8.18827" stroke="#da7793" stroke-width="1.5" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <!-- shape -->
   <img alt="shape" src="assets/img/Ellipse 4 (2).png" class="position-absolute -top-60 end-0 -z-1 d-none d-md-block">
 
@@ -1281,7 +1300,7 @@
   <!-- navigation -->
   <div class="navigation w-95 mx-auto mb-0 d-sm-none m-4 mt-5">
     <ul>
-      <li class="list">
+      <li class="list" data-bs-toggle="modal" data-bs-target="#search">
         <a>
           <span class="icon">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
