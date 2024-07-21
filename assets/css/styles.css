@@ -1200,6 +1200,9 @@ header ul li:hover>svg,header ul li.active>svg {
     .w-sm-83 {
         width: 83px;
     }
+    .w-sm-90{
+        width: 90%;
+    }
     .w-sm-101 {
         width: 101px;
     }
